@@ -10,7 +10,7 @@ internal static class KkxGlobals
         set => _services = value;
     }
 
-    public const string FragmentDirectoryPath = "Fragments";
+    public const string FragmentsDirectoryPath = "Fragments";
     public const string PagesDirectoryPath = "Pages";
 
     /// <summary>
@@ -25,7 +25,7 @@ internal static class KkxGlobals
     public const string Host = "http://localhost:6969/"; // <-- Do not remove trailing slash!
 
     /// <summary>
-    /// Scans directories <see cref="FragmentDirectoryPath"/> and <see cref="PagesDirectoryPath"/> before each request.
+    /// Scans directories <see cref="FragmentsDirectoryPath"/> and <see cref="PagesDirectoryPath"/> before each request.
     /// Useful when you make changes frequently.
     /// </summary>
     public const bool EnableRescan = true;

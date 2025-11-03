@@ -35,7 +35,7 @@ internal sealed class KkxServer
             _pages.Add(kkxDirectory.Route, kkxDirectory);
         }
 
-        foreach (var kkxDirectory in _directoryScanner.ScanDirectory(KkxGlobals.FragmentDirectoryPath,
+        foreach (var kkxDirectory in _directoryScanner.ScanDirectory(KkxGlobals.FragmentsDirectoryPath,
                      KkxGlobals.ExtensionsToScan))
         {
             _fragments.Add(kkxDirectory.Route, kkxDirectory);
