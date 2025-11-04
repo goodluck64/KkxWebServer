@@ -9,7 +9,7 @@ internal sealed class KkxServerHandlerPack : IHandlerPack<KkxRequestHandler>
     {
         var builder = new HandlerBuilder<KkxRequestHandler>();
 
-        builder.AddHandler(new UrlHandler());
+        builder.AddHandler(new PrimaryHandler());
         builder.AddHandler(new PathNormalizerHandler());
         builder.AddHandler(new RouteHandler());
         builder.AddHandler(new FinalHandler());
